@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .body {
+            background-image: url("/static/pinkbg.png");
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .textarea {
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 50px;
+            padding: 2px 2px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            display: block;
+            margin: auto;
+            text-align: center;
+            margin-top: 40px;
+            resize: none;
+        }
+
+        .formm {
+            margin-top: 70px;
+            flex-wrap: nowrap;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+        }
+        #leftbox {
+                background:black;
+                width:50%;
+                height:280px;
+                padding: 15px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #middlebox{
+                padding: 15px;
+                background:black;
+                width:50%;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                height:280px;
+            }
+            #rightbox{
+                padding: 15px;
+                background:black;
+                margin-left: auto;
+                margin-right: auto;
+                width:50%;
+                height:280px;
+            }
+        .btn {
+            display: block;
+            margin: auto;
+            background-color: transparent;
+            color: white;
+            margin-top: 40px;
+            padding: 0.5em 3em;
+            border-color: white;
+            box-sizing: border-box;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: #FFFFFF;
+            text-align: center;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            color: #DDDDDD;
+            border-color: #DDDDDD;
+        }
+
+        .btn:active {
+            color: #BBBBBB;
+            border-color: #BBBBBB;
+        }
+
+        @media all and (max-width:30em) {
+            .btn {
+                display: block;
+                margin: 0.4em auto;
+            }
+        }
+        .algo{
+            color: white;
+        }
+        .anss{
+            color:white;
+        }
+        .heading{
+            font-family: monospace;
+            display: block;
+            margin: auto;
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 200%;
+        }
+
+        .heading2{
+            font-family: monospace;
+            display: block;
+            margin: auto;
+            color: white;
+            padding: 10px;
+            font-weight: bolder;
+            text-align: center;
+            font-size: 300%;
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSA</title>
+</head>
+<body class="body">
+    <h1 class="heading">Comparision of string matching algorithms</h1>
+    <h1 class="heading2">Ukonnens, Rabin Karp and Z algorithm</h1>
+
+    <div id = "leftbox">
+        <h2 class="algo">UKKONENS:</h2>
+        <p class="anss">{{ans_ukkonens}}</p>
+
+    </div> 
+      
+    <div id = "middlebox">
+        <h2 class="algo">RABIN KARP:</h2>
+        <p class="anss">{{ans_robinkarp}}</p>
+
+    </div>
+      
+    <div id = "rightbox">
+        <h2 class="algo">Z-ALGORITHM:</h2>
+        <p class="anss">{{ans_zalgo}}</p>
+    </div>
+</body>
+</html>
