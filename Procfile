@@ -1,1 +1,1 @@
-web: gunicorn --preload app:app
+web: python app.py
